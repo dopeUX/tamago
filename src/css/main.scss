@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.hero{
+    width: 70%;
+    margin: 0 auto;
+
+}
+.header{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    
+    .header-top{
+       display: flex;
+       justify-content: space-between;
+    h1{
+        margin: 1rem;
+        padding: 0;
+    }
+    button{
+       height: fit-content;
+       width: fit-content;
+       padding: 1rem 2rem ;
+       color: white;
+       background-color: cornflowerblue;
+       font-family: 'Inter', sans-serif;
+       font-size: 1.1rem;
+       border-radius: 2rem; 
+       border: none;
+       margin:auto 0;
+       cursor: pointer;
+    }
+   }
+
+    .search-section{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-top: .5rem;
+        position: relative;
+
+        input{
+            width: 230px;
+            border: none;
+            outline:none;
+            padding: 1rem;
+            margin: .5rem;
+            border-radius: 1rem;
+            background-color: rgba(223, 223, 223, 0.611);
+        }
+
+        .location-filter{
+            width: fit-content;
+            border-radius: 2rem;
+            //padding:.3rem 3rem;
+            display: flex;
+            margin-left: 3rem;
+            cursor: pointer;
+            border: 2px solid cornflowerblue;
+            //box-shadow: 0 0 20px 5px rgb(226, 226, 226);
+
+            h3{
+                font-size: 1rem;
+                margin: 1.2rem 1rem 1rem 2rem;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                margin:auto 3rem auto 0rem;
+            }
+
+            .location-box{
+                position:absolute;
+                width: fit-content;
+                height: 250px;
+                display: none;
+                margin-top: 5rem;
+                background-color: white;
+                border-radius: 1.2rem;
+                box-shadow: 0 0 30px 5px rgb(216, 216, 216);
+           
+               .city{
+                 margin: 1.2rem;
+               }
+            }
+
+        }
+        
+    }
+}
+
+.hotels-section{
+   padding: 1rem;
+   display: table;
+}
+
+.hotels-card{
+    width: fit-content;
+    margin: 2rem;
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: .7rem;
+    box-shadow: 0 0 30px 10px rgba(190, 190, 190, 0.607);
+    img{
+        width: 220px;
+        height: 150px;
+        margin: auto;
+        border-radius: 1rem;
+        object-fit: cover;
+    }
+    h2{
+     margin: 1rem .5rem;
+
+    }
+    .hotels-card-location{
+        margin: 0 0 0 .5rem;
+       color: rgb(174, 174, 174);
+    }
+    h3{
+        margin: 1rem 0 0 .7rem;
+        color: cornflowerblue;
+    }
+
+    button{
+        width: 100%;
+        color: white;
+        background-color: cornflowerblue;
+        border: none;
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+        padding: .5rem;
+        border-radius: .6rem;
+        margin: 1rem 0 0 0;
+        cursor: pointer;
+
+    }
+}
+
+.login-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(232, 232, 232);
+    
+   .login-page-section{
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+
+       h1{
+           font-size: 2rem;
+           margin: auto auto 2rem auto;
+       }
+       input{
+           border: none;
+           padding: 1rem 1.5rem;
+           outline: none;
+           font-family: 'Inter', sans-serif;
+           font-size: 1.3rem;
+           margin: 1rem 0;
+       }
+       button{
+           background-color: cornflowerblue;
+           color: white;
+           font-family: 'Inter', sans-serif;
+           font-size: 1.3rem;
+           font-weight: 500;
+           border: none;
+           padding: 1.3rem;
+           border-radius: 1.3rem;
+           margin-top: 1.2rem;
+           cursor: pointer;
+        }
+    }
+}
+
+.checkout-page{
+  width: 100%;
+    .header{
+        width: 70%;
+        margin: auto;
+    }
+
+    .hotel-section{
+        .hotel-component{
+           margin-left: 15%; 
+           margin-top: 1rem;
+           display: flex;
+           flex-direction: row;
+
+           img{
+               width: 350px;
+               height: 400px;
+               border-radius: 1rem;
+               object-fit: cover;
+           } 
+           .hotel-component-details{
+               display: flex;
+               flex-direction: column;
+               margin-left: 3rem;
+              
+               h2{
+                   margin:1rem 0;
+               }
+               .location{
+                   font-weight: 500;
+                   color: rgb(146, 146, 146);
+               }
+               h3{
+                   color: cornflowerblue;
+               }
+               .from{
+                   color: rgb(165, 165, 165);
+               }
+               input{
+                 border: none;
+                 outline: none;
+            
+               }
+               button{
+                   color: white;
+                   background-color: cornflowerblue;
+                   padding: 1rem;
+                   margin-top: 1rem;
+                   font-family: 'Inter', sans-serif;
+                   font-size: 1rem;
+                   font-weight: 600;
+                   border: none;
+                   border-radius: 2rem;
+                   cursor: pointer;
+               }
+           }
+        }
+    }
+}
