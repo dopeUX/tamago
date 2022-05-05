@@ -8,7 +8,7 @@ export default function LoginPage(){
     const login = () =>{ 
        if(email!==''&&password!==''){
           localStorage.setItem('user', email); 
-          nav('/home'); 
+          nav('/'); 
        }else{
            alert('please enter the correct email and password');
        }

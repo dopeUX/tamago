@@ -9,7 +9,7 @@ import CheckoutPage from "./CheckoutPage";
 export default function Fragments(){
     return (
         <Routes>
-           <Route path="/home" element={<Homepage/>}/> 
+           <Route path="/" element={<Homepage/>}/> 
            <Route path="/login-page" element={<LoginPage/>}/>
            <Route path="/checkout-page" element={<CheckoutPage/>}/>
         </Routes>
